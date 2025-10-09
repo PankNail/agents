@@ -40,15 +40,15 @@ print(Answer)
 
 display(Markdown(Answer))
 
-Assesment = f"""You are to rank the examples in following article. 
-here is the article {Answer}
+# Assesment = f"""You are to rank the examples in following article. 
+# here is the article {Answer}
 
-Your job is to rank the example based on practical feasiblities, potential challenges and easy monetization. Include a summary for reason for ranking."""
+# Your job is to rank the example based on practical feasiblities, potential challenges and easy monetization. Include a summary for reason for ranking."""
 
-message = [{"role": "user", "content": Assesment}]
-responses = openai.chat.completions.create(model="gpt-4.1-nano",messages=message) 
+# message = [{"role": "user", "content": Assesment}]
+# responses = openai.chat.completions.create(model="gpt-4.1-nano",messages=message) 
 
-print(responses.choices[0].message.content)
+# print(responses.choices[0].message.content)
 
 
 
